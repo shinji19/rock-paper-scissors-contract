@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  contract:
+    image: node:20.3.0
+    volumes:
+      - .:/opt/rock-paper-scissors-contract
+    working_dir: /opt/rock-paper-scissors-contract
+    tty: true
+    init: true
